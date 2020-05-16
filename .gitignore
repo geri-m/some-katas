@@ -1,0 +1,31 @@
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEA realeaty.
+.idea
+.gradle
+*.idea
+*.iml
+/gradle
+/build
+/build/
+/target
+/target/
+# target folder and all subfolders.
+target/
+/classes
+/classes/
+# class Folder and all subfolder
+classes/
+
+# Automatically generated POM Files
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
