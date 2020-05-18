@@ -28,4 +28,33 @@ Example 04
 ```
 input: acbabbcbca 
 return : bbcbc
+````
+
+
+## Kata 02
+
+Convert Arabic Numbers to Roman Numbers. If you need help: https://www.periodni.com/de/romische_zahlen_umwandeln.html
+
+Example 01
 ```
+input: 1
+output : I
+```
+
+Example 02
+```
+input: 9 
+return: IX
+```
+
+Example 03
+```
+input: 18 
+return: XVII
+```
+
+Example 04
+```
+input: 44 
+return : XLIV
+````
