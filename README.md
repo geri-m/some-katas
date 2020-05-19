@@ -58,3 +58,16 @@ Example 04
 input: 44 
 return : XLIV
 ````
+
+## Kata 03
+
+Write a function to return a copy of a list of strings with duplicates removed. Preserve order in the original list as much as possible (keep first occurrence).
+
+Example
+```
+input: ["foo", "bar", "baz", "foo", "bar"]
+output: ["foo", "bar", "baz"]
+```
+
+
+
