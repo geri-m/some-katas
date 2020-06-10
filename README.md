@@ -70,7 +70,7 @@ input: ["foo", "bar", "baz", "foo", "bar"]
 output: ["foo", "bar", "baz"]
 ```
 
-## Kate 04: Shuffle List
+## Kata 04: Shuffle List
 
 Suppose you have a deck of cards represented as a linked list. You can perfectly shuffle that list by cutting it at the 
 halfway point, then interleaving the two halves by alternating back and forth between the cards. For example, suppose 
@@ -93,4 +93,20 @@ Then, you'd interleave the halves, like this:
 The resulting list is said to have been perfectly shuffled. Your job is to write a function that accepts as input a 
 pointer to a linked list with an even number of elements, then re­ arranges the elements in that list so that they're 
 perfectly shuffled.
+
+## Kata 05: Sum Sub Array list
+
+A subarray of an array is a consecutive sequence of zero or more values taken out of that array. For example, the array 
+[1, 3, 7] has seven subarrays:
+[] [1] [3] [7] [1,3] [3,7] [1,3,7]
+Notice that [1, 7] is not a subarray of [1, 3, 7], because even though the values 1 and 7 appear in the array, they're 
+not consecutive in the array. Similarly, the array [7, 3] isn't a subarray of the original array, because these values
+are in the wrong order.
+
+The sum of an array is the sum of all the values in that array. Your task is to write a function that takes as input an 
+array and outputs the sum of all of its subarrays. For example, given [1, 3, 7], you'd output 36, because
+
+
+[ ] + [1] + [3] + [7] + [1, 3] + [3, 7] + [1, 3, 7] = 0 + 1 + 3 + 7 + 4 + 10 + 11 = 36
+
 

@@ -167,12 +167,10 @@ public class ShuffleList {
             // walk thru the list, till the next Element is null and we are at the end of the list.
             while (start.getNextElement() != null) {
                 start = start.getNextElement();
-                out.append(" " + start.getValue());
+                out.append(" ").append(start.getValue());
             }
 
             return out.toString();
         }
     }
-
-
 }
