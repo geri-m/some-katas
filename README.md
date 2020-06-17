@@ -109,4 +109,21 @@ array and outputs the sum of all of its subarrays. For example, given [1, 3, 7],
 
 [ ] + [1] + [3] + [7] + [1, 3] + [3, 7] + [1, 3, 7] = 0 + 1 + 3 + 7 + 4 + 10 + 11 = 36
 
+## Kata 06: Create a balanced Binary Search Tree. 
 
+CS101.
+
+Balanced:  The heights of the two child subtrees of any node differ by at most one. (Wikipedia: AVL-Tree) 
+
+## Kata 07: Find smallest Range in a list of Int. 
+
+You have k lists of sorted integers. Find the smallest range that includes at least one number from each of the k lists.
+
+For example,
+List 1: [4, 10, 15, 24, 26]
+List 2: [0, 9, 12, 20]
+List 3: [5, 18, 22, 30]
+
+The smallest range here would be [20, 24] as it contains 24 from list 1, 20 from list 2, and 22 from list 3.
+
+https://www.careercup.com/question?id=16759664
