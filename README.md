@@ -128,7 +128,24 @@ The smallest range here would be [20, 24] as it contains 24 from list 1, 20 from
 
 https://www.careercup.com/question?id=16759664
 
-
 ## Kata 08: Pot of Gold
 
-Pots of gold game: Two players A & B. There are pots of gold arranged in a line, each containing some gold coins (the players can see how many coins are there in each gold pot - perfect information). They get alternating turns in which the player can pick a pot from one of the ends of the line. The winner is the player which has a higher number of coins at the end. The objective is to "maximize" the number of coins collected by A, assuming B also plays optimally. A starts the game.
+Pots of gold game: Two players A & B. There are pots of gold arranged in a line, each containing some gold coins (the 
+players can see how many coins are there in each gold pot - perfect information). They get alternating turns in which 
+the player can pick a pot from one of the ends of the line. The winner is the player which has a higher number of coins 
+at the end. The objective is to "maximize" the number of coins collected by A, assuming B also plays optimally. 
+A starts the game.
+
+https://www.careercup.com/question?id=15422849
+
+
+## Kata 09: Diff between SubArray should be max
+
+Given an array of integers. Find two disjoint contiguous sub-arrays such that the absolute difference between the sum 
+of two sub-array is maximum. The sub-arrays should not overlap.
+
+[2, -1, -2, 1, -4, 2, 8, -1] ans - (-1, -2, 1, -4) (2, 8), diff = 16
+[4, -1, 7] (3), (7), diff = 4
+[2,-1,-2,12,453,-9,2,8] (2,-1,-2,12,453), (-9), diff = 455
+
+## Kata 10: Implement Push and Pop for a Min Heap.
