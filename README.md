@@ -149,3 +149,11 @@ of two sub-array is maximum. The sub-arrays should not overlap.
 [2,-1,-2,12,453,-9,2,8] (2,-1,-2,12,453), (-9), diff = 455
 
 ## Kata 10: Implement Push and Pop for a Min Heap.
+
+## Kata 11: Implement a Addition without '+'
+
+## Kata 12: Solve this problem
+
+https://techdevguide.withgoogle.com/paths/advanced/compress-decompression/#code-challenge
+
+
