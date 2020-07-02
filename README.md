@@ -156,4 +156,6 @@ of two sub-array is maximum. The sub-arrays should not overlap.
 
 https://techdevguide.withgoogle.com/paths/advanced/compress-decompression/#code-challenge
 
+## Kata 13: Mine Sweeper
 
+https://techdevguide.withgoogle.com/resources/coding-question-minesweeper/?types=coding-interview-question#code-challenge
