@@ -41,31 +41,64 @@ public class MineSweeper {
     private static void findMines(int x, int y, int[][] game, int[][] visits) {
         if (game[x][y] != 9) {
             visits[x][y] = 1;
+
+            // Find mines around the current position.
+            // TOP
+            if (game[x].length > y + 1 && game[x][y + 1] == 9) {
+                game[x][y]++;
+            }
+
+            // TOP RIGHT
+            if (game[x].length > y + 1 && game.length > x + 1 && game[x + 1][y + 1] == 9) {
+                game[x][y]++;
+            }
+
+            // RIGHT
+            if (game.length > x + 1 && game[x + 1][y] == 9) {
+                game[x][y]++;
+            }
+
+            // RIGHT BUTTOM
+            if (game.length > x + 1 && y - 1 >= 0 && game[x + 1][y - 1] == 9) {
+                game[x][y]++;
+            }
+
+
+            // BUTTOM
+            if (y - 1 >= 0 && game[x][y - 1] == 9) {
+                game[x][y]++;
+            }
+
+            // BUTTOM LEFT
+            if (y - 1 >= 0 && x - 1 >= 0 && game[x - 1][y - 1] == 9) {
+                game[x][y]++;
+            }
+
+            // LEFT
+            if (x - 1 >= 0 && game[x - 1][y] == 9) {
+                game[x][y]++;
+            }
+
+
+            if (x - 1 >= 0 && game[x].length > y + 1 && game[x - 1][y + 1] == 9) {
+                game[x][y]++;
+            }
+
+            // ********************************
+
             if (game[x].length > y + 1 && visits[x][y + 1] != 1) {
-                if (game[x][y + 1] == 9) {
-                    game[x][y]++;
-                }
                 findMines(x, y + 1, game, visits);
             }
 
-            if (y - 1 > 0 && visits[x][y - 1] != 1) {
-                if (game[x][y - 1] == 9) {
-                    game[x][y]++;
-                }
+            if (y - 1 >= 0 && visits[x][y - 1] != 1) {
                 findMines(x, y - 1, game, visits);
             }
 
             if (game.length > x + 1 && visits[x + 1][y] != 1) {
-                if (game[x + 1][y] == 9) {
-                    game[x][y]++;
-                }
                 findMines(x + 1, y, game, visits);
             }
 
-            if (x - 1 > 0 && visits[x - 1][y] != 1) {
-                if (game[x - 1][y] == 9) {
-                    game[x][y]++;
-                }
+            if (x - 1 >= 0 && visits[x - 1][y] != 1) {
                 findMines(x - 1, y, game, visits);
             }
         }
@@ -89,17 +122,16 @@ public class MineSweeper {
 
 
     public static void main(String[] args) {
-        int x = 5;
-        int y = 5;
+        int x = 20;
+        int y = 20;
         int[][] v = new int[x][y];
-        int[][] g = generateGame(x, y, 10);
-
-        findMines(0, 0, g, new int[x][y]);
-
-        unhideMind(0, 0, g, new int[x][y]);
-
+        int[][] g = generateGame(x, y, 25);
         System.out.print(printGame(g));
         System.out.println("---------");
+        findMines(0, 0, g, v);
+        System.out.print(printGame(g));
+        System.out.println("---------");
+        unhideMind(0, 0, g, v);
         System.out.print(printGame(v));
     }
 
