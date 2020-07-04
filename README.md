@@ -159,3 +159,8 @@ https://techdevguide.withgoogle.com/paths/advanced/compress-decompression/#code-
 ## Kata 13: Mine Sweeper
 
 https://techdevguide.withgoogle.com/resources/coding-question-minesweeper/?types=coding-interview-question#code-challenge
+
+## Kata 14: Generate Sums
+
+Given a number n, generate all distinct ways to write n as the sum of positive integers. For example, with n = 4, the 
+options are 4, 3 + 1, 2 + 2, 2 + 1 + 1, and 1 + 1 + 1 + 1.
